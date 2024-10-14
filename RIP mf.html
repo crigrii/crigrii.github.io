@@ -1,0 +1,207 @@
+<html>  
+  <head>
+    <meta name="description" content="Esta es mi primera página creada en HTML">
+    <meta name="keywords" content="mi primera pagina, mi pagina en html, creacion de paginas">
+    <title>MF DOOM commemoration</title>
+    <style>
+      /* Estilo para el fondo */
+      body {
+        background-color: #000000; /* Fondo negro */
+        color: #FFFFFF; /* Texto en blanco */
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana */
+      }
+
+      /* Estilo para el recuadro del medio */
+      .content-box {
+        background-color: #FFFFFF; /* Color blanco del recuadro */
+        padding: 20px;
+        width: 90%;
+        margin: 0 auto; /* Centrando el recuadro */
+        border-radius: 10px; /* Borde redondeado */
+        color: #000000; /* Texto negro dentro del recuadro */
+        position: relative; /* Para posicionar la imagen dentro de este contenedor */
+        text-align: center; /* Centrar el contenido dentro del recuadro */
+      }
+      
+      /* Estilo para la tabla del menú */
+      table {
+        width: 100%;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+        padding: 10px 0;
+      }
+
+      h1 {
+       color: #005700; /* Color verde oscuro */
+       font-weight: bold; /* Pone el texto en negrita */
+       font-size: 40px; /* Tamaño de fuente (ajusta según sea necesario) */
+      }
+
+      /* Estilo para redimensionar la imagen */
+      .logo {
+        width: 220px; /* Ancho de la imagen */
+        height: 170px; /* Altura de la imagen */
+      }
+
+      /* Estilo para colocar imagen en la parte inferior derecha del recuadro */
+      .imagen-recuadro {
+        position: absolute; /* Posicionamiento absoluto respecto a .content-box */
+        bottom: 0; /* Pegado al borde inferior */
+        right: 5px; /* Ligeramente más a la derecha */
+        width: 300px; /* Tamaño de la imagen ajustado a 300px */
+        height: auto; /* Mantiene la proporción */
+      }
+
+      /* Estilo para la tabla de botones */
+      .button-image {
+        width: 130px; /* Ancho del botón ajustado */
+        height: auto; /* Mantiene proporción */
+      }
+
+      /* Estilo para la imagen en la esquina inferior derecha de la página */
+      .corner-image {
+        position: fixed;
+        bottom: 0; /* Posición inferior */
+        right: 0; /* Posición derecha */
+        width: 300px; /* Tamaño más grande de la imagen */
+        height: auto; /* Mantiene proporción */
+        margin: 10px; /* Margen respecto a los bordes */
+      }
+
+      /* Estilo para la imagen en la esquina superior derecha de la página */
+      .top-image {
+        position: fixed;
+        top: 10px; /* 10px desde la parte superior */
+        right: 10px; /* 10px desde la parte derecha */
+        width: 160px; /* Tamaño de la imagen */
+        height: auto; /* Mantiene proporción */
+      }
+
+      /* Estilo para la imagen en la parte inferior izquierda */
+      .bottom-left-image {
+        position: fixed; /* Posicionamiento fijo */
+        bottom: 10px; /* 10px desde la parte inferior */
+        left: 10px; /* 10px desde la parte izquierda */
+        width: 190px; /* Tamaño de la imagen */
+        height: auto; /* Mantiene la proporción */
+      }
+
+      /* Estilo para los botones debajo del recuadro */
+      .button-container {
+        display: flex; /* Usar flexbox para alinear los botones */
+        justify-content: center; /* Centrar los botones */
+        width: 80%; /* Ancho del contenedor de botones */
+        margin: 40px auto 20px; /* Margen superior aumentado para centrar más abajo */
+      }
+
+      .button-container a {
+        text-align: center; /* Centrar texto */
+        margin: 0 10px; /* Margen horizontal entre los botones */
+      }
+
+      .button-container img {
+        width: 180px; /* Aumenta el tamaño de las imágenes de los botones */
+        height: auto; /* Mantiene proporción */
+        border-radius: 10px; /* Borde redondeado para las imágenes */
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5); /* Sombra para dar profundidad */
+        transition: transform 0.3s; /* Transición suave para el efecto de hover */
+        border: 2px solid #FFFFFF; /* Marco de color blanco alrededor de las imágenes */
+      }
+
+      .button-container img:hover {
+        transform: scale(1.1); /* Efecto de hover: aumenta el tamaño */
+      }
+
+      /* Estilo para la sección de contacto */
+      .contact-section {
+        text-align: center; /* Centrar texto en la sección de contacto */
+        margin-top: auto; /* Asegura que la sección esté al final */
+        padding: 20px 0; /* Espaciado vertical */
+      }
+
+      /* Estilo para el texto en verde lima */
+      .contact-section a {
+        color: #00FF00; /* Color verde lima para los enlaces */
+      }
+
+      /* Estilo para el video */
+      .video-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <center>
+      <table>
+        <tr>
+          <td>
+            <img class="logo" src="imagenes/logo.png" alt="logo de nuestra pagina web"> 
+            <!-- Botón de inicio que recarga la página -->
+            <a href="RIP mf.html">
+              <img class="button-image" src="imagenes/inicio-boton.png" alt="Botón de inicio">
+            </a>
+            <a href="DOOM.html">
+              <img class="button-image" src="imagenes/DOOM.png" alt="DOOM?" style="height: 70px;"> <!-- Cambié la clase para evitar conflicto -->
+            </a>
+          </td>
+        </tr>
+      </table>
+    </center>
+
+    <!-- Contenido principal -->
+    <div class="content-box">
+      <h1>MF DOOM</h1>
+      <p style="color: #000000; font-size: 20px; text-align: left;">MF DOOM, cuyo nombre real es Daniel Dumile, es el maestro del rap enmascarado, cuyas letras son como rompecabezas en un laberinto. Con un ingenio afilado y metáforas enrevesadas, transforma lo cotidiano en poesía críptica. Sus versos están llenos de referencias culturales y humor oscuro, haciéndote reír mientras sus rimas brillan como oro. Como un villano de cómic, su estilo único y voz rasposa te atrapa, llevándote a un mundo donde cada línea es una sorpresa. ¡Con MF DOOM, cada canción es una aventura lírica que desafía la lógica y enciende la imaginación!</p>
+
+      <!-- Video en el centro del recuadro -->
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gSJeHDlhYls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <!-- Imagen en la parte inferior derecha del recuadro -->
+      <img class="imagen-recuadro" src="imagenes/imagen-recuadro.png" alt="Imagen en la parte inferior derecha">
+    </div>
+
+    <!-- Contenedor para los botones debajo del recuadro -->
+    <div class="button-container">
+      <div>
+        <a href="Doomsday1.html"><img src="imagenes/OperationDoomsday.png" alt="Operation Doomsday"></a>
+        <div style="color: #FFFFFF; text-align: center; margin-top: 5px; text-transform: uppercase;">OPERATION DOOMSDAY</div>
+      </div>
+      <div>
+        <a href="madvillainy.html"><img src="imagenes/Madvillainy.png" alt="Madvillainy"></a>
+        <div style="color: #FFFFFF; text-align: center; margin-top: 5px; text-transform: uppercase;">MADVILLAINY</div>
+      </div>
+      <div>
+        <a href="MMM...FOOD.html"><img src="imagenes/MMM...Food.png" alt="MMM Food"></a>
+        <div style="color: #FFFFFF; text-align: center; margin-top: 5px; text-transform: uppercase;">MMM...FOOD</div>
+      </div>
+      <div>
+        <a href="BORNLIKETHIS.html"><img src="imagenes/BORN-LIKE-THIS.png" alt="BORN-LIKE-THIS"></a>
+        <div style="color: #FFFFFF; text-align: center; margin-top: 5px; text-transform: uppercase;">BORN LIKE THIS</div>
+      </div>
+    </div>
+
+    <!-- Sección de contacto -->
+    <div class="contact-section">
+      <a href="RIP mf.html">Inicio</a> -
+      <a href="DOOM.html">DOOM?</a> 
+      <br>
+      Copyright 2011. Mándanos un mensaje vía email a 
+      <a href="mailto:info@website.com">info@website.com</a>
+    </div>
+
+    <!-- Imagen en la esquina inferior derecha de la página -->
+    <img class="corner-image" src="imagenes/tu-imagen.png" alt="logo en la esquina inferior derecha">
+    <img class="top-image" src="imagenes/imagen-recuadro2.png" alt="Imagen en la parte superior derecha">
+    <img class="bottom-left-image" src="imagenes/foto-elegida3.png" alt="Foto elegida">
+
+  </body>
+</html>
